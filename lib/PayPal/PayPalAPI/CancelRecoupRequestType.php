@@ -1,30 +1,25 @@
-<?php 
+<?php
 namespace PayPal\PayPalAPI;
-use PayPal\EBLBaseComponents\AbstractRequestType; 
-/**
- * 
- */
-class CancelRecoupRequestType  extends AbstractRequestType  
-  {
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ed
-	 
-	 	 	 	 
-	 * @var PayPal\EnhancedDataTypes\EnhancedCancelRecoupRequestDetailsType	 
-	 */ 
-	public $EnhancedCancelRecoupRequestDetails;
+use PayPal\EBLBaseComponents\AbstractRequestType;
+use PayPal\EnhancedDataTypes\EnhancedCancelRecoupRequestDetailsType;
 
-	/**
-	 * Constructor with arguments
-	 */
-	public function __construct($EnhancedCancelRecoupRequestDetails = NULL) {
-		$this->EnhancedCancelRecoupRequestDetails = $EnhancedCancelRecoupRequestDetails;
-	}
+class CancelRecoupRequestType extends AbstractRequestType
+{
 
+    /**
+     * @access public
+     * @namespace ed
+     * @var EnhancedCancelRecoupRequestDetailsType
+     */
+    public $EnhancedCancelRecoupRequestDetails;
 
-    
+    /**
+     * Constructor with arguments
+     * @param EnhancedCancelRecoupRequestDetailsType $EnhancedCancelRecoupRequestDetails
+     */
+    public function __construct($EnhancedCancelRecoupRequestDetails = null)
+    {
+        $this->EnhancedCancelRecoupRequestDetails = $EnhancedCancelRecoupRequestDetails;
+    }
 }

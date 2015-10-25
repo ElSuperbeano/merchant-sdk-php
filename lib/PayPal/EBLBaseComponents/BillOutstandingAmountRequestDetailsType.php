@@ -1,52 +1,39 @@
-<?php 
+<?php
 namespace PayPal\EBLBaseComponents;
+
 use PayPal\Core\PPXmlMessage;
-/**
- * 
- */
-class BillOutstandingAmountRequestDetailsType  
-   extends PPXmlMessage{
+use PayPal\CoreComponentTypes\BasicAmountType;
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var string	 
-	 */ 
-	public $ProfileID;
+class BillOutstandingAmountRequestDetailsType extends PPXmlMessage
+{
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var PayPal\CoreComponentTypes\BasicAmountType	 
-	 */ 
-	public $Amount;
+    /**
+     * @access public
+     * @namespace ebl
+     * @var string
+     */
+    public $ProfileID;
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var string	 
-	 */ 
-	public $Note;
+    /**
+     * @access public
+     * @namespace ebl
+     * @var BasicAmountType
+     */
+    public $Amount;
 
-	/**
-	 * Constructor with arguments
-	 */
-	public function __construct($ProfileID = NULL) {
-		$this->ProfileID = $ProfileID;
-	}
+    /**
+     * @access public
+     * @namespace ebl
+     * @var string
+     */
+    public $Note;
 
-
-    
+    /**
+     * Constructor with arguments
+     * @param string $ProfileID
+     */
+    public function __construct($ProfileID = null)
+    {
+        $this->ProfileID = $ProfileID;
+    }
 }

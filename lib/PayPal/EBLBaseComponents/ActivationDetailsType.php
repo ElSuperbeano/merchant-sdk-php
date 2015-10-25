@@ -1,41 +1,32 @@
-<?php 
+<?php
 namespace PayPal\EBLBaseComponents;
+
 use PayPal\Core\PPXmlMessage;
-/**
- * 
- */
-class ActivationDetailsType  
-   extends PPXmlMessage{
+use PayPal\CoreComponentTypes\BasicAmountType;
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var PayPal\CoreComponentTypes\BasicAmountType	 
-	 */ 
-	public $InitialAmount;
+class ActivationDetailsType extends PPXmlMessage
+{
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var string 	 
-	 */ 
-	public $FailedInitialAmountAction;
+    /**
+     * @access public
+     * @namespace ebl
+     * @var BasicAmountType
+     */
+    public $InitialAmount;
 
-	/**
-	 * Constructor with arguments
-	 */
-	public function __construct($InitialAmount = NULL) {
-		$this->InitialAmount = $InitialAmount;
-	}
+    /**
+     * @access public
+     * @namespace ebl
+     * @var string
+     */
+    public $FailedInitialAmountAction;
 
-
-    
+    /**
+     * Constructor with arguments
+     * @param BasicAmountType $InitialAmount
+     */
+    public function __construct($InitialAmount = null)
+    {
+        $this->InitialAmount = $InitialAmount;
+    }
 }

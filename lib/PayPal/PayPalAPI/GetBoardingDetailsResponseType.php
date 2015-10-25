@@ -1,22 +1,16 @@
-<?php 
+<?php
 namespace PayPal\PayPalAPI;
-use PayPal\EBLBaseComponents\AbstractResponseType; 
-/**
- * 
- */
-class GetBoardingDetailsResponseType  extends AbstractResponseType  
-  {
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var PayPal\EBLBaseComponents\GetBoardingDetailsResponseDetailsType	 
-	 */ 
-	public $GetBoardingDetailsResponseDetails;
+use PayPal\EBLBaseComponents\AbstractResponseType;
+use PayPal\EBLBaseComponents\GetBoardingDetailsResponseDetailsType;
 
+class GetBoardingDetailsResponseType extends AbstractResponseType
+{
 
+    /**
+     * @access public
+     * @namespace ebl
+     * @var GetBoardingDetailsResponseDetailsType
+     */
+    public $GetBoardingDetailsResponseDetails;
 }

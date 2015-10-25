@@ -1,30 +1,25 @@
-<?php 
+<?php
 namespace PayPal\PayPalAPI;
-use PayPal\EBLBaseComponents\AbstractRequestType; 
-/**
- * 
- */
-class SetMobileCheckoutRequestType  extends AbstractRequestType  
-  {
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var PayPal\EBLBaseComponents\SetMobileCheckoutRequestDetailsType	 
-	 */ 
-	public $SetMobileCheckoutRequestDetails;
+use PayPal\EBLBaseComponents\AbstractRequestType;
+use PayPal\EBLBaseComponents\SetMobileCheckoutRequestDetailsType;
 
-	/**
-	 * Constructor with arguments
-	 */
-	public function __construct($SetMobileCheckoutRequestDetails = NULL) {
-		$this->SetMobileCheckoutRequestDetails = $SetMobileCheckoutRequestDetails;
-	}
+class SetMobileCheckoutRequestType extends AbstractRequestType
+{
 
+    /**
+     * @access public
+     * @namespace ebl
+     * @var SetMobileCheckoutRequestDetailsType
+     */
+    public $SetMobileCheckoutRequestDetails;
 
-    
+    /**
+     * Constructor with arguments
+     * @param string $SetMobileCheckoutRequestDetails
+     */
+    public function __construct($SetMobileCheckoutRequestDetails = null)
+    {
+        $this->SetMobileCheckoutRequestDetails = $SetMobileCheckoutRequestDetails;
+    }
 }

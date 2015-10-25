@@ -1,30 +1,25 @@
-<?php 
+<?php
 namespace PayPal\PayPalAPI;
-use PayPal\EBLBaseComponents\AbstractRequestType; 
-/**
- * 
- */
-class DoNonReferencedCreditRequestType  extends AbstractRequestType  
-  {
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var PayPal\EBLBaseComponents\DoNonReferencedCreditRequestDetailsType	 
-	 */ 
-	public $DoNonReferencedCreditRequestDetails;
+use PayPal\EBLBaseComponents\AbstractRequestType;
+use PayPal\EBLBaseComponents\DoNonReferencedCreditRequestDetailsType;
 
-	/**
-	 * Constructor with arguments
-	 */
-	public function __construct($DoNonReferencedCreditRequestDetails = NULL) {
-		$this->DoNonReferencedCreditRequestDetails = $DoNonReferencedCreditRequestDetails;
-	}
+class DoNonReferencedCreditRequestType extends AbstractRequestType
+{
 
+    /**
+     * @access public
+     * @namespace ebl
+     * @var DoNonReferencedCreditRequestDetailsType
+     */
+    public $DoNonReferencedCreditRequestDetails;
 
-    
+    /**
+     * Constructor with arguments
+     * @param string $DoNonReferencedCreditRequestDetails
+     */
+    public function __construct($DoNonReferencedCreditRequestDetails = null)
+    {
+        $this->DoNonReferencedCreditRequestDetails = $DoNonReferencedCreditRequestDetails;
+    }
 }

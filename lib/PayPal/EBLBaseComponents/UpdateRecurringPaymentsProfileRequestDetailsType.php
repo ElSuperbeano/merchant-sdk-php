@@ -1,207 +1,141 @@
-<?php 
+<?php
 namespace PayPal\EBLBaseComponents;
+
 use PayPal\Core\PPXmlMessage;
-/**
- * 
- */
-class UpdateRecurringPaymentsProfileRequestDetailsType  
-   extends PPXmlMessage{
+use PayPal\CoreComponentTypes\BasicAmountType;
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var string	 
-	 */ 
-	public $ProfileID;
+class UpdateRecurringPaymentsProfileRequestDetailsType extends PPXmlMessage
+{
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var string	 
-	 */ 
-	public $Note;
+    /**
+     * @access public
+     * @namespace ebl
+     * @var string
+     */
+    public $ProfileID;
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var string	 
-	 */ 
-	public $Description;
+    /**
+     * @access public
+     * @namespace ebl
+     * @var string
+     */
+    public $Note;
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var string	 
-	 */ 
-	public $SubscriberName;
+    /**
+     * @access public
+     * @namespace ebl
+     * @var string
+     */
+    public $Description;
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var PayPal\EBLBaseComponents\AddressType	 
-	 */ 
-	public $SubscriberShippingAddress;
+    /**
+     * @access public
+     * @namespace ebl
+     * @var string
+     */
+    public $SubscriberName;
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var string	 
-	 */ 
-	public $ProfileReference;
+    /**
+     * @access public
+     * @namespace ebl
+     * @var AddressType
+     */
+    public $SubscriberShippingAddress;
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var integer	 
-	 */ 
-	public $AdditionalBillingCycles;
+    /**
+     * @access public
+     * @namespace ebl
+     * @var string
+     */
+    public $ProfileReference;
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var PayPal\CoreComponentTypes\BasicAmountType	 
-	 */ 
-	public $Amount;
+    /**
+     * @access public
+     * @namespace ebl
+     * @var integer
+     */
+    public $AdditionalBillingCycles;
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var PayPal\CoreComponentTypes\BasicAmountType	 
-	 */ 
-	public $ShippingAmount;
+    /**
+     * @access public
+     * @namespace ebl
+     * @var BasicAmountType
+     */
+    public $Amount;
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var PayPal\CoreComponentTypes\BasicAmountType	 
-	 */ 
-	public $TaxAmount;
+    /**
+     * @access public
+     * @namespace ebl
+     * @var BasicAmountType
+     */
+    public $ShippingAmount;
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var PayPal\CoreComponentTypes\BasicAmountType	 
-	 */ 
-	public $OutstandingBalance;
+    /**
+     * @access public
+     * @namespace ebl
+     * @var BasicAmountType
+     */
+    public $TaxAmount;
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var string 	 
-	 */ 
-	public $AutoBillOutstandingAmount;
+    /**
+     * @access public
+     * @namespace ebl
+     * @var BasicAmountType
+     */
+    public $OutstandingBalance;
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var integer	 
-	 */ 
-	public $MaxFailedPayments;
+    /**
+     * @access public
+     * @namespace ebl
+     * @var string
+     */
+    public $AutoBillOutstandingAmount;
 
-	/**
-	 * Information about the credit card to be charged (required if
-	 * Direct Payment) 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var PayPal\EBLBaseComponents\CreditCardDetailsType	 
-	 */ 
-	public $CreditCard;
+    /**
+     * @access public
+     * @namespace ebl
+     * @var integer
+     */
+    public $MaxFailedPayments;
 
-	/**
-	 * When does this Profile begin billing? 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var dateTime	 
-	 */ 
-	public $BillingStartDate;
+    /**
+     * Information about the credit card to be charged (required if
+     * Direct Payment)
+     * @access public
+     * @namespace ebl
+     * @var CreditCardDetailsType
+     */
+    public $CreditCard;
 
-	/**
-	 * Trial period of this schedule 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var PayPal\EBLBaseComponents\BillingPeriodDetailsType_Update	 
-	 */ 
-	public $TrialPeriod;
+    /**
+     * When does this Profile begin billing?
+     * @access public
+     * @namespace ebl
+     * @var string dateTime
+     */
+    public $BillingStartDate;
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var PayPal\EBLBaseComponents\BillingPeriodDetailsType_Update	 
-	 */ 
-	public $PaymentPeriod;
+    /**
+     * Trial period of this schedule
+     * @access public
+     * @namespace ebl
+     * @var BillingPeriodDetailsType_Update
+     */
+    public $TrialPeriod;
 
-	/**
-	 * Constructor with arguments
-	 */
-	public function __construct($ProfileID = NULL) {
-		$this->ProfileID = $ProfileID;
-	}
+    /**
+     * @access public
+     * @namespace ebl
+     * @var BillingPeriodDetailsType_Update
+     */
+    public $PaymentPeriod;
 
-
-    
+    /**
+     * Constructor with arguments
+     * @param string $ProfileID
+     */
+    public function __construct($ProfileID = null)
+    {
+        $this->ProfileID = $ProfileID;
+    }
 }

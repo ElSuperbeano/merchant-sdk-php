@@ -1,42 +1,33 @@
-<?php 
+<?php
 namespace PayPal\PayPalAPI;
-use PayPal\EBLBaseComponents\AbstractRequestType; 
-/**
- * 
- */
-class ManagePendingTransactionStatusRequestType  extends AbstractRequestType  
-  {
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ns
-	 
-	 	 	 	 
-	 * @var PayPal\EBLBaseComponents\string	 
-	 */ 
-	public $TransactionID;
+use PayPal\EBLBaseComponents\AbstractRequestType;
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ns
-	 
-	 	 	 	 
-	 * @var string 	 
-	 */ 
-	public $Action;
+class ManagePendingTransactionStatusRequestType extends AbstractRequestType
+{
 
-	/**
-	 * Constructor with arguments
-	 */
-	public function __construct($TransactionID = NULL, $Action = NULL) {
-		$this->TransactionID = $TransactionID;
-		$this->Action = $Action;
-	}
+    /**
+     * @access public
+     * @namespace ns
+     * @var string
+     */
+    public $TransactionID;
 
+    /**
+     * @access public
+     * @namespace ns
+     * @var string
+     */
+    public $Action;
 
-    
+    /**
+     * Constructor with arguments
+     * @param string $TransactionID
+     * @param string $Action
+     */
+    public function __construct($TransactionID = null, $Action = null)
+    {
+        $this->TransactionID = $TransactionID;
+        $this->Action = $Action;
+    }
 }

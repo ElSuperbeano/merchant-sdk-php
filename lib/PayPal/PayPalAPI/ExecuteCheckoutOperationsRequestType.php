@@ -1,30 +1,25 @@
-<?php 
+<?php
 namespace PayPal\PayPalAPI;
-use PayPal\EBLBaseComponents\AbstractRequestType; 
-/**
- * 
- */
-class ExecuteCheckoutOperationsRequestType  extends AbstractRequestType  
-  {
 
-	/**
-	 * 
-	 * @access public
-	 
-	 * @namespace ebl
-	 
-	 	 	 	 
-	 * @var PayPal\EBLBaseComponents\ExecuteCheckoutOperationsRequestDetailsType	 
-	 */ 
-	public $ExecuteCheckoutOperationsRequestDetails;
+use PayPal\EBLBaseComponents\AbstractRequestType;
+use PayPal\EBLBaseComponents\ExecuteCheckoutOperationsRequestDetailsType;
 
-	/**
-	 * Constructor with arguments
-	 */
-	public function __construct($ExecuteCheckoutOperationsRequestDetails = NULL) {
-		$this->ExecuteCheckoutOperationsRequestDetails = $ExecuteCheckoutOperationsRequestDetails;
-	}
+class ExecuteCheckoutOperationsRequestType extends AbstractRequestType
+{
 
+    /**
+     * @access public
+     * @namespace ebl
+     * @var ExecuteCheckoutOperationsRequestDetailsType
+     */
+    public $ExecuteCheckoutOperationsRequestDetails;
 
-    
+    /**
+     * Constructor with arguments
+     * @param string $ExecuteCheckoutOperationsRequestDetails
+     */
+    public function __construct($ExecuteCheckoutOperationsRequestDetails = null)
+    {
+        $this->ExecuteCheckoutOperationsRequestDetails = $ExecuteCheckoutOperationsRequestDetails;
+    }
 }
