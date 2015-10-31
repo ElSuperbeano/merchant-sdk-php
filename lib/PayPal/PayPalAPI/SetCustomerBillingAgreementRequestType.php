@@ -16,7 +16,7 @@ class SetCustomerBillingAgreementRequestType extends AbstractRequestType
 
     /**
      * Constructor with arguments
-     * @param string $SetCustomerBillingAgreementRequestDetails
+     * @param SetCustomerBillingAgreementRequestDetailsType $SetCustomerBillingAgreementRequestDetails
      */
     public function __construct($SetCustomerBillingAgreementRequestDetails = null)
     {

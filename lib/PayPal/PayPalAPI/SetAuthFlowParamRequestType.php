@@ -16,7 +16,7 @@ class SetAuthFlowParamRequestType extends AbstractRequestType
 
     /**
      * Constructor with arguments
-     * @param string $SetAuthFlowParamRequestDetails
+     * @param SetAuthFlowParamRequestDetailsType $SetAuthFlowParamRequestDetails
      */
     public function __construct($SetAuthFlowParamRequestDetails = null)
     {

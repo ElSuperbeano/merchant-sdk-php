@@ -2,6 +2,7 @@
 namespace PayPal\PayPalAPI;
 
 use PayPal\EBLBaseComponents\AbstractRequestType;
+use PayPal\EnhancedDataTypes\EnhancedInitiateRecoupRequestDetailsType;
 
 class InitiateRecoupRequestType extends AbstractRequestType
 {
@@ -9,13 +10,13 @@ class InitiateRecoupRequestType extends AbstractRequestType
     /**
      * @access public
      * @namespace ed
-     * @var \PayPal\EnhancedDataTypes\EnhancedInitiateRecoupRequestDetailsType
+     * @var EnhancedInitiateRecoupRequestDetailsType
      */
     public $EnhancedInitiateRecoupRequestDetails;
 
     /**
      * Constructor with arguments
-     * @param string $EnhancedInitiateRecoupRequestDetails
+     * @param EnhancedInitiateRecoupRequestDetailsType $EnhancedInitiateRecoupRequestDetails
      */
     public function __construct($EnhancedInitiateRecoupRequestDetails = null)
     {

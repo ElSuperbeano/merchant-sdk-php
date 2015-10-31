@@ -29,7 +29,7 @@ class DoReferenceTransactionRequestType extends AbstractRequestType
 
     /**
      * Constructor with arguments
-     * @param string $DoReferenceTransactionRequestDetails
+     * @param DoReferenceTransactionRequestDetailsType $DoReferenceTransactionRequestDetails
      */
     public function __construct($DoReferenceTransactionRequestDetails = null)
     {

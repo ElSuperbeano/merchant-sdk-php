@@ -60,8 +60,8 @@ class DoUATPAuthorizationRequestType extends AbstractRequestType
 
     /**
      * Constructor with arguments
-     * @param string $UATPDetails
-     * @param string $Amount
+     * @param UATPDetailsType $UATPDetails
+     * @param BasicAmountType $Amount
      */
     public function __construct($UATPDetails = null, $Amount = null)
     {

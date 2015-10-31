@@ -81,7 +81,7 @@ class MassPayRequestItemType extends PPXmlMessage
 
     /**
      * Constructor with arguments
-     * @param string $Amount
+     * @param BasicAmountType $Amount
      */
     public function __construct($Amount = null)
     {

@@ -52,7 +52,7 @@ class DoReauthorizationRequestType extends AbstractRequestType
     /**
      * Constructor with arguments
      * @param string $AuthorizationID
-     * @param string $Amount
+     * @param BasicAmountType $Amount
      */
     public function __construct($AuthorizationID = null, $Amount = null)
     {

@@ -192,7 +192,7 @@ class PaymentDetailsType extends PPXmlMessage
      * @array
      * @access public
      * @namespace ebl
-     * @var PaymentDetailsItemType
+     * @var PaymentDetailsItemType[]
      */
     public $PaymentDetailsItem;
 

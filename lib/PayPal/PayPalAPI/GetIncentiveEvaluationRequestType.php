@@ -16,7 +16,7 @@ class GetIncentiveEvaluationRequestType extends AbstractRequestType
 
     /**
      * Constructor with arguments
-     * @param string $GetIncentiveEvaluationRequestDetails
+     * @param GetIncentiveEvaluationRequestDetailsType $GetIncentiveEvaluationRequestDetails
      */
     public function __construct($GetIncentiveEvaluationRequestDetails = null)
     {

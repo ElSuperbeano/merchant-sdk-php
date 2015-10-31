@@ -172,7 +172,7 @@ class DoAuthorizationRequestType extends AbstractRequestType
     /**
      * Constructor with arguments
      * @param string $TransactionID
-     * @param string $Amount
+     * @param BasicAmountType $Amount
      */
     public function __construct($TransactionID = null, $Amount = null)
     {

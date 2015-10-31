@@ -16,7 +16,7 @@ class SetExpressCheckoutRequestType extends AbstractRequestType
 
     /**
      * Constructor with arguments
-     * @param string $SetExpressCheckoutRequestDetails
+     * @param SetExpressCheckoutRequestDetailsType $SetExpressCheckoutRequestDetails
      */
     public function __construct($SetExpressCheckoutRequestDetails = null)
     {

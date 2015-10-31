@@ -16,7 +16,7 @@ class DoNonReferencedCreditRequestType extends AbstractRequestType
 
     /**
      * Constructor with arguments
-     * @param string $DoNonReferencedCreditRequestDetails
+     * @param DoNonReferencedCreditRequestDetailsType $DoNonReferencedCreditRequestDetails
      */
     public function __construct($DoNonReferencedCreditRequestDetails = null)
     {

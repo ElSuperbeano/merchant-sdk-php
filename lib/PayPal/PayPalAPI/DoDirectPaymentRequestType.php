@@ -29,7 +29,7 @@ class DoDirectPaymentRequestType extends AbstractRequestType
 
     /**
      * Constructor with arguments
-     * @param string $DoDirectPaymentRequestDetails
+     * @param DoDirectPaymentRequestDetailsType $DoDirectPaymentRequestDetails
      */
     public function __construct($DoDirectPaymentRequestDetails = null)
     {

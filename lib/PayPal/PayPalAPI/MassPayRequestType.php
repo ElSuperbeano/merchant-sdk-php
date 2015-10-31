@@ -51,13 +51,13 @@ class MassPayRequestType extends AbstractRequestType
      * @array
      * @access public
      * @namespace ns
-     * @var MassPayRequestItemType
+     * @var MassPayRequestItemType[]
      */
     public $MassPayItem;
 
     /**
      * Constructor with arguments
-     * @param string $MassPayItem
+     * @param MassPayRequestItemType[] $MassPayItem
      */
     public function __construct($MassPayItem = null)
     {

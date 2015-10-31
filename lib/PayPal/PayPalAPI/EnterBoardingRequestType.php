@@ -16,7 +16,7 @@ class EnterBoardingRequestType extends AbstractRequestType
 
     /**
      * Constructor with arguments
-     * @param string $EnterBoardingRequestDetails
+     * @param EnterBoardingRequestDetailsType $EnterBoardingRequestDetails
      */
     public function __construct($EnterBoardingRequestDetails = null)
     {

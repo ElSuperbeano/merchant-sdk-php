@@ -29,7 +29,7 @@ class DoExpressCheckoutPaymentRequestType extends AbstractRequestType
 
     /**
      * Constructor with arguments
-     * @param string $DoExpressCheckoutPaymentRequestDetails
+     * @param DoExpressCheckoutPaymentRequestDetailsType $DoExpressCheckoutPaymentRequestDetails
      */
     public function __construct($DoExpressCheckoutPaymentRequestDetails = null)
     {

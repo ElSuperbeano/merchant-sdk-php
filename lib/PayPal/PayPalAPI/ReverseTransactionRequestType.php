@@ -16,7 +16,7 @@ class ReverseTransactionRequestType extends AbstractRequestType
 
     /**
      * Constructor with arguments
-     * @param string $ReverseTransactionRequestDetails
+     * @param ReverseTransactionRequestDetailsType $ReverseTransactionRequestDetails
      */
     public function __construct($ReverseTransactionRequestDetails = null)
     {

@@ -73,7 +73,7 @@ class DoExpressCheckoutPaymentRequestDetailsType extends PPXmlMessage
      * @array
      * @access public
      * @namespace ebl
-     * @var PaymentDetailsType
+     * @var PaymentDetailsType[]
      */
     public $PaymentDetails;
 

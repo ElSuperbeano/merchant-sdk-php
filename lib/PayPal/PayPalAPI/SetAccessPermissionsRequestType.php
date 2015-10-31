@@ -16,7 +16,7 @@ class SetAccessPermissionsRequestType extends AbstractRequestType
 
     /**
      * Constructor with arguments
-     * @param string $SetAccessPermissionsRequestDetails
+     * @param SetAccessPermissionsRequestDetailsType $SetAccessPermissionsRequestDetails
      */
     public function __construct($SetAccessPermissionsRequestDetails = null)
     {

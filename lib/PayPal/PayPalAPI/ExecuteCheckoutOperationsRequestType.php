@@ -16,7 +16,7 @@ class ExecuteCheckoutOperationsRequestType extends AbstractRequestType
 
     /**
      * Constructor with arguments
-     * @param string $ExecuteCheckoutOperationsRequestDetails
+     * @param ExecuteCheckoutOperationsRequestDetailsType $ExecuteCheckoutOperationsRequestDetails
      */
     public function __construct($ExecuteCheckoutOperationsRequestDetails = null)
     {

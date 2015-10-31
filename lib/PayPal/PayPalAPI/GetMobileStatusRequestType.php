@@ -16,7 +16,7 @@ class GetMobileStatusRequestType extends AbstractRequestType
 
     /**
      * Constructor with arguments
-     * @param string $GetMobileStatusRequestDetails
+     * @param GetMobileStatusRequestDetailsType $GetMobileStatusRequestDetails
      */
     public function __construct($GetMobileStatusRequestDetails = null)
     {

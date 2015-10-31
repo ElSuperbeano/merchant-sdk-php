@@ -16,7 +16,7 @@ class SetMobileCheckoutRequestType extends AbstractRequestType
 
     /**
      * Constructor with arguments
-     * @param string $SetMobileCheckoutRequestDetails
+     * @param SetMobileCheckoutRequestDetailsType $SetMobileCheckoutRequestDetails
      */
     public function __construct($SetMobileCheckoutRequestDetails = null)
     {
